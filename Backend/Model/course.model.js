@@ -9,10 +9,9 @@ const courseSchema=mongoose.Schema({
     price:Number,
     category:String,
     topic:String,
-    about:Array,
-    image:Array
+    image:String
 })
-const courseModel=mongoose.model('educourse',courseSchema)
+const courseModel=mongoose.model('educourselist',courseSchema)
 module.exports={
     courseModel
 }

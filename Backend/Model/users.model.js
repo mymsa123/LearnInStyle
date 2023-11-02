@@ -6,10 +6,10 @@ const userSchema=mongoose.Schema({
     city:String,
     age:Number,
     gender:String,
-    cart:Array,
-    wishlist:Array,
-    active_orders:Array,
-    past_orders:Array
+    cart:[String],
+    wishlist:[String],
+    active_orders:[String],
+    past_orders:[String]
 })
 const userModel=mongoose.model('eduuser',userSchema)
 module.exports={
