@@ -44,7 +44,7 @@ userRouter.post('/login',async(req,res)=>{
         if(user){
             bcrypt.compare(password, user.password, async(err, result)=> {
                 if(result){
-                    const token=jwt.sign({email:email},"masai")
+                    const token=jwt.sign({email:email,userID:user._id,username:user.username},"masai")
                     //const newtoken=new tokenModel({token,email})
                    // await newtoken.save()
                     res.status(200).send({"msg":"Login Successfull","token":token})

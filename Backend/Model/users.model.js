@@ -9,7 +9,7 @@ const userSchema=mongoose.Schema({
     cart:Array,
     wishlist:Array,
     active_orders:Array,
-    past_orders:Array
+    past_orders:Array 
 })
 const userModel=mongoose.model('eduuser',userSchema)
 module.exports={
