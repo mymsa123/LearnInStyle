@@ -10,7 +10,9 @@ const courseSchema=mongoose.Schema({
     category:String,
     topic:String,
     about:Array,
-    image:Array
+    image:Array,
+    username:String,
+    userID:String
 })
 const courseModel=mongoose.model('educourse',courseSchema)
 module.exports={

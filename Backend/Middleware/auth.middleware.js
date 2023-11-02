@@ -4,7 +4,9 @@ const auth=(req,res,next)=>{
     if(token){
         jwt.verify(token,"masai",(err,decoded)=>{
             if(decoded){
-                req.body.email=decoded.email
+                req.body.username=decoded.username;
+                req.body.userID = decoded.userID;
+                req.body.email=decoded.email;
                 next()
             }
             else{
