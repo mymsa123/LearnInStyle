@@ -5,6 +5,7 @@ const { userModel } = require('../Model/users.model')
 const { tokenModel } = require('../Model/token.model')
 const jwt=require('jsonwebtoken')
 const { auth } = require('../Middleware/auth.middleware')
+const { courseModel } = require('../Model/course.model')
 
 userRouter.post('/register',async(req,res)=>{
     const {username,email,password,city,age,gender}=req.body
@@ -77,8 +78,64 @@ userRouter.post('/logout',auth,async(req,res)=>{
 })
 
 userRouter.get('/courses',auth,async(req,res)=>{
-    
+    try{
+        const courses=await courseModel.find()
+        res.status(200).send({"courses":courses})
+    }
+    catch(err){
+        res.status(401).send({"Server Error":err}) 
+    }
 })
+
+userRouter.post('/addtocart/:courseid',auth,async(req,res)=>{
+    const id=req.params.courseid
+    const useremail=req.body.email
+    try{
+      const finduser= await userModel.findOne({email:useremail})
+      const findcourse=await courseModel.findOne({_id:id})
+            const newcart=finduser.cart
+            newcart.push(id)
+            await userModel.findByIdAndUpdate(finduser._id,{cart:newcart})
+            res.status(200).send({"msg":"Course added Successfully to Cart"})
+    }
+    catch(err){
+        res.status(401).send({"Server Error":err}) 
+    }
+})
+
+userRouter.post('/removefromcart/:courseid',auth,async(req,res)=>{
+    const id=req.params.courseid
+    const useremail=req.body.email
+    try{
+      const finduser= await userModel.findOne({email:useremail})
+      const findcourse=await courseModel.findOne({_id:id})
+            const newcart=finduser.cart
+            newcart.push(id)
+            await userModel.findByIdAndUpdate(finduser._id,{$pull:{cart:id}})
+            res.status(200).send({"msg":"Course removed Successfully from Cart"})
+    }
+    catch(err){
+        res.status(401).send({"Server Error":err}) 
+    }
+})
+
+// userRouter.get('/courses/:q',auth,async(req,res)=>{
+//     const query=req.params.q
+//     try{
+//        const find=await courseModel.find({$text:{$search:query}})
+//        if(find==null){
+//         res.status(200).send({"msg":"No Result Found"})
+//        }
+//        else{
+//         res.status(200).send({"courses":find})
+//        } 
+//     }
+//     catch(err){
+//         res.status(401).send({"Server Error":err}) 
+//     }
+// })
+
+
 
 module.exports={
     userRouter
