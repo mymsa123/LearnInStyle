@@ -27,6 +27,21 @@ courseRouter.patch('/updateCourse/:courseid',async(req,res)=>{
     }
  })
 
+
+ courseRouter.get('/',async(req,res)=>{
+    try{
+       const find=await courseModel.find()
+       if(find==null){
+        res.status(200).send({"msg":"No Result Found"})
+       }
+       else{
+        res.status(200).send({"courses":find})
+       } 
+    }
+    catch(err){
+        res.status(401).send({"Server Error":err}) 
+    }
+})
  module.exports={
     courseRouter
  }

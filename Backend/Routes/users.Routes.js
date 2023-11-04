@@ -118,25 +118,6 @@ userRouter.post('/removefromcart/:courseid',auth,async(req,res)=>{
         res.status(401).send({"Server Error":err}) 
     }
 })
-
-// userRouter.get('/courses/:q',auth,async(req,res)=>{
-//     const query=req.params.q
-//     try{
-//        const find=await courseModel.find({$text:{$search:query}})
-//        if(find==null){
-//         res.status(200).send({"msg":"No Result Found"})
-//        }
-//        else{
-//         res.status(200).send({"courses":find})
-//        } 
-//     }
-//     catch(err){
-//         res.status(401).send({"Server Error":err}) 
-//     }
-// })
-
-
-
 module.exports={
     userRouter
 }
