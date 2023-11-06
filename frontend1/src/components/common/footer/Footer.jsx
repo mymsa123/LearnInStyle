@@ -50,8 +50,8 @@ const Footer = () => {
           </div>
           <div className='box'>
             <h3>Recent Post</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB'>
+            {blog.slice(0, 3).map((val,i) => {
+              return <div className='items flexSB' key={i}>
                 <div className='img'>
                   <img src={val.cover} alt='' />
                 </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                   <h4>{val.title.slice(0, 40)}...</h4>
                 </div>
               </div>
-            ))}
+            })}
           </div>
           <div className='box last'>
             <h3>Have a Questions?</h3>

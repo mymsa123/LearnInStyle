@@ -18,14 +18,21 @@ export const Login = () => {
       [name]: value,
     });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('https://vast-cyan-tuna.cyclic.app/users/login',formData)
     .then((res)=>{
-        setstatus(true)
-        alert("Login Sucessfull, Welcome to Educquik")
-        navigate('/')
+        console.log(res)
+        if(res.data.msg =="Wrong credentials")
+        {
+          alert('Password is Incorrect')
+        }else if(res.data.msg=="User Does not exist"){
+          alert("User Crediential are Invalid")
+        }else{
+          setstatus(true)
+          alert("Login Sucessfull, Welcome to Educquik")
+          navigate('/')
+        }
     })
     .catch((err)=>{
         console.log(err)

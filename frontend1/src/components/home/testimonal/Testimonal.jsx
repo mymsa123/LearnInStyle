@@ -11,8 +11,8 @@ const Testimonal = () => {
           <Heading subtitle='TESTIMONIAL' title='Our Successful Students' />
 
           <div className='content grid2'>
-            {testimonal.map((val) => (
-              <div className='items shadow'>
+            {testimonal.map((val,i) => (
+              <div className='items shadow' key={i}>
                 <div className='box flex'>
                   <div className='img'>
                     <img src={val.cover} alt='' />

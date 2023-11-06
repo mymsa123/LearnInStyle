@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './enroll.css';
-import { useNavigate, useParams } from 'react-router-dom';
-import axios from 'axios';
+import { useNavigate} from 'react-router-dom';
 export const Enroll = () => {
-  const [course,setcourse]=useState()
-  const [singlecourse,setsinglecourse]=useState()
+ 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,24 +16,7 @@ export const Enroll = () => {
       [name]: value,
     });
   };
-  const {id}=useParams()
-  useEffect(()=>{
-    axios.get('https://vast-cyan-tuna.cyclic.app/course')
-    .then((res)=>{
-      setcourse(res.data.courses)
-      const filtered=res.data.courses.filter((e)=>{
-        if(e._id===id){
-          return e
-        }
-      })
-      setsinglecourse()
-      console.log(filtered)
-    })
-    .catch((err)=>{
-       console.log(err)
-    })
-  },[])
- 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("ENROLLMENT SUCCESSFULL")
@@ -45,18 +26,6 @@ export const Enroll = () => {
 
   return (
     <>
-    <div className='course-detail'>
-    <div className='image'>{singlecourse.image}</div>
-      <div className='title'>{singlecourse.title}</div>
-      <div className='category'>{singlecourse.category}</div>
-      <div className='topic'>{singlecourse.topic}</div>
-      <div className='created_by'>{singlecourse.created_by}</div>
-      <div className='ratings'>{singlecourse.ratings}</div>
-      <div className='no_of_students'>{singlecourse.no_of_students}</div>
-      <div className='language'>{singlecourse.language}</div>
-      <div className='price'>{singlecourse.price}</div>
-      <div className='description'>{singlecourse.description}</div>
-    </div>
       <div className="enrollment-form">
         <h2>Enrollment Form</h2>
         <form onSubmit={handleSubmit}>
@@ -68,6 +37,7 @@ export const Enroll = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              required
             />
           </div>
   
@@ -79,17 +49,19 @@ export const Enroll = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              required
             />
           </div>
   
           <div className="form-group">
             <label htmlFor="phoneNumber">Phone Number:</label>
             <input
-              type="tel"
+              type="number"
               id="phoneNumber"
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
+              required
             />
           </div>
   

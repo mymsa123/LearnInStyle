@@ -19,8 +19,8 @@ const CoursesCard = () => {
     <>
       <section className='coursesCard'>
         <div className='container grid2'>
-          {posts?.map((val) => (
-            <div className='items' key={val.id}>
+          {posts?.map((val,i) => (
+            <div key={i} className='items'>
               <div className='content flex'>
                 <div className='left'>
                   <div className='img'>

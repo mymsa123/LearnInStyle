@@ -12,8 +12,8 @@ const Hblog = () => {
         <div className='container'>
           <Heading subtitle='OUR BLOG' title='Recent From Blog' />
           <div className='grid2'>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items shadow'>
+            {blog.slice(0, 3).map((val,i) => (
+              <div className='items shadow' key={i}>
                 <div className='img'>
                   <img src={val.cover} alt='' />
                 </div>
