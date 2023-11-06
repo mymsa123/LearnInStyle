@@ -1,7 +1,6 @@
 # LearnInStyl
 
-**Netlify :**  [PaintKu](https://voluble-cuchufli-58a93f.netlify.app/)
-* User Page
+**Netlify :**  [EduQuik](https://voluble-cuchufli-58a93f.netlify.app/)
 
 ## Tech Stack
 
