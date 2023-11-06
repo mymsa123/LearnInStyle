@@ -1,4 +1,4 @@
-# LearnInStyl
+# LearnInStyle
 
 **Netlify :**  [EduQuik](https://voluble-cuchufli-58a93f.netlify.app/)
 
