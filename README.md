@@ -53,3 +53,4 @@ If you have any Feedback, Please reach out to us at jahirpp1999@gmail.com
 - [Avishkar Kamble](https://github.com/aavishkark)
 - [Jahir Pendhari](https://github.com/JahirPendhari09)
 - [Sandip Bankar](https://github.com/SandipBankar6900)
+- [Badri Singh](https://github.com/badrisinghoo7)
