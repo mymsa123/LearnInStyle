@@ -1,4 +1,3 @@
-/*--------head------------*/
 .head {
   padding: 20px 0;
   color: black;
@@ -10,8 +9,6 @@
 .head .icon {
   margin-left: 10px;
 }
-/*--------head------------*/
-/*--------header------------*/
 header {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0 30px;
@@ -46,7 +43,6 @@ header ul li a:hover {
   background-color: #1eb2a6;
   border-radius: 5px;
 }
-/*--------header------------*/
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
