@@ -9,7 +9,7 @@ const CoursesCard = () => {
   
 
   useEffect(() => {
-    axios.get('https://vast-cyan-tuna.cyclic.app/course').then((response) =>{
+    axios.get('https://fancy-flannel-nightgown-fly.cyclic.app/course').then((response) =>{
       // console.log(response.data.courses)
       setPosts(response.data.courses)
       });

@@ -20,7 +20,7 @@ export const Login = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://vast-cyan-tuna.cyclic.app/users/login',formData)
+    axios.post('https://fancy-flannel-nightgown-fly.cyclic.app/users/login',formData)
     .then((res)=>{
         console.log(res)
         if(res.data.msg =="Wrong credentials")

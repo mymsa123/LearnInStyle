@@ -33,3 +33,9 @@
     width: 100%;
   }
 }
+a{
+  color: white;
+}
+button{
+  cursor: pointer;
+}
