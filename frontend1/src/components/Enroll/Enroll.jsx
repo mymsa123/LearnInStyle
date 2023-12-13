@@ -83,7 +83,7 @@ export const Enroll = () => {
           </div>
   
           <div className="form-group">
-            <label htmlFor="phoneNumber">Phone Number:</label>
+            <label htmlFor="phoneNumber">Phone Number :</label>
             <input
               type="tel"
               id="phoneNumber"
