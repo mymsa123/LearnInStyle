@@ -3,19 +3,19 @@ export const homeAbout = [
     id: 1,
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
     title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Unlock your potential with our diverse range of online courses, designed to empower learners at every skill level.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
     title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Unlock your potential with our diverse range of online courses, designed to empower learners at every skill level.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
     title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Unlock your potential with our diverse range of online courses, designed to empower learners at every skill level.",
   },
 ]
 export const awrapper = [
@@ -289,22 +289,22 @@ export const price = [
   {
     name: "BASIC PLAN",
     price: "49K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Our Basic Plan Inclues recoeded videos explaining all the important topics that are explained in simple manner",
   },
   {
     name: "BEGINNER PLAN",
     price: "79K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "In Beginner plan you will get all the features from basic plan plus will also be able to join doubt session.",
   },
   {
     name: "PREMIUM PLAN",
     price: "109k",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "In Premium pall all fetures from the basic and beginner plans are include plus you will get extra notes that will help you study.",
   },
   {
     name: "ULTIMATE PLAN",
     price: "149K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "In ultimate plan eeverything from othe three plans is included plus you will get live sessions of teaching by our expert",
   },
 ]
 export const faq = [
@@ -340,7 +340,7 @@ export const blog = [
     date: "JAN. 18, 2023",
     com: "3 COMMENTS ",
     title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "../images/blog/b1.webp",
   },
   {
@@ -349,7 +349,7 @@ export const blog = [
     date: "API. 25, 2023",
     com: "5 COMMENTS ",
     title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "../images/blog/b2.webp",
   },
   {
@@ -358,7 +358,7 @@ export const blog = [
     date: "MAY. 15, 2023",
     com: "10 COMMENTS ",
     title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "../images/blog/b3.webp",
   },
   {
@@ -367,7 +367,7 @@ export const blog = [
     date: "JAN. 02, 2023",
     com: "3 COMMENTS ",
     title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "../images/blog/b4.webp",
   },
   {
@@ -376,7 +376,7 @@ export const blog = [
     date: "DEC. 14, 2023",
     com: "3 COMMENTS ",
     title: "Build your Dream Software & Engineering Career",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "../images/blog/b5.webp",
   },
   {
@@ -394,21 +394,21 @@ export const testimonal = [
     id: 1,
     name: "ROGER SCOTT",
     post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "./images/testo/t1.webp",
   },
   {
     id: 2,
     name: "ROGER SCOTT",
     post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "./images/testo/t2.webp",
   },
   {
     id: 3,
     name: "ROGER SCOTT",
     post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "This online course platform has been a transformative learning experience, offering engaging content, knowledgeable instructors, and a user-friendly interface.",
     cover: "./images/testo/t3.webp",
   },
 ]
