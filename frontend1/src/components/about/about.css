@@ -76,6 +76,14 @@
     width: 100%;
   }
   .awrapper {
-    height: 50vh;
+    display: none;
+    /* height: 50vh; */
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .left{
+    display: none;
   }
 }
