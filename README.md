@@ -1,6 +1,8 @@
-[# LearnInStyle
+# EduQuik
 
-**Netlify :**  [EduQuik](https://eduquik.netlify.app/)
+Netlify :  [EduQuik](https://eduquikneo.netlify.app/)
+
+Backend : [EduQuik](https://frightened-bracelet-bee.cyclic.app/)
 
 EduQuik Online Learning Project is an ambitious and innovative endeavor aimed at revolutionizing the way to learn new Courses. Developed by a team of dedicated language enthusiasts and tech-savvy educators, our project seeks to empower young minds with invaluable linguistic skills while fostering cross-cultural understanding and global awareness.
 
@@ -10,9 +12,30 @@ Interactive Learning Platform: We have meticulously designed an interactive and 
 
 Tailored Curriculum: At the heart of the EduQuik project is a carefully curated curriculum that addresses the unique needs and learning styles for Users. Our team of Languages experts has developed age-appropriate content, ensuring that learners progress at their own pace and achieve maximum retention.
 
-Multilingual Diversity: In an increasingly interconnected world, multilingualism has become a powerful asset. The EduQuik project offers a diverse range of Courses, allowing users to explore and master languages such as python,javaScript,Java,HTML, and more. By providing this linguistic diversity, we aim to broaden horizons and encourage a genuine appreciation for different cultures.
 
 <br/>
+
+
+# Home Page
+
+![Home Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/eb26f485-00c3-4604-98e2-310da85ce39f)
+
+# Login Page
+
+![Login Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/8898f831-b98b-4c6b-b02e-fd5ed7cbe702)
+
+# Sign up Page
+
+![Signup Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/f5a8d756-9542-4250-84e8-4c8788e188bf)
+
+# Teachers Page
+
+![Teachers ](https://github.com/JahirPendhari09/EduQuik/assets/128920395/b5d3b8a4-513c-47cc-9590-7af9b0b1eaf8)
+
+# Courses Page
+
+![Courses Page](https://github.com/JahirPendhari09/EduQuik/assets/128920395/f1ac7903-f5e4-4652-bd91-d004da0dc999)
+
 
 # Tech Stack
 
@@ -33,12 +56,27 @@ Multilingual Diversity: In an increasingly interconnected world, multilingualism
 </p>
 
 ## Features
-
-**User Page**
 - Login & SignUp
+- Private Routes
 - Add and delete Course
-- Image Slideshow
+- Cart Page
+- Payment Page
 - Responsive Layout
+
+## API Reference
+
+#### Courses Data
+
+```
+  GET https://frightened-bracelet-bee.cyclic.app/course
+```
+
+#### User Data
+
+```
+  POST https://frightened-bracelet-bee.cyclic.app/users/register
+  POST https://frightened-bracelet-bee.cyclic.app/users/login
+```
 
 ## Feedback
 
@@ -48,6 +86,12 @@ If you have any Feedback, Please reach out to us at jahirpp1999@gmail.com
 
 **Team Lead :**
 - [Md Sabir Alam](https://github.com/mymsa123)
+
+**Team Members :**
+- [Avishkar Kamble](https://github.com/aavishkark)
+- [Jahir Pendhari](https://github.com/JahirPendhari09)
+- [Sandip Bankar](https://github.com/SandipBankar6900)
+- [Badri Singh](https://github.com/badrisinghoo7)
 
 **Team Members :**
 - [Avishkar Kamble](https://github.com/aavishkark)
